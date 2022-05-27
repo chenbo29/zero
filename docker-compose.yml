@@ -1,0 +1,13 @@
+version: "3.0"
+services:
+  go:
+    build:
+      context: .
+    working_dir: /data/greet
+    ports:
+      - "6000:8888"
+    volumes:
+      - type: bind
+        source: .
+        target: /data
+    command: ["go", "run", 'greet.go', '-f', 'etc/greet-api.yaml']
