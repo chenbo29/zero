@@ -1,6 +1,6 @@
 type (
 	Request {
-		Name string `path:"name,options=you|me"` // parameters are auto validated
+		Id int64 `path:"name,options=you|me"` // parameters are auto validated
 	}
 
 	Response {

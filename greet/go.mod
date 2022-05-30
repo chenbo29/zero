@@ -2,7 +2,11 @@ module greet
 
 go 1.18
 
-require github.com/zeromicro/go-zero v1.3.3
+require (
+	github.com/go-sql-driver/mysql v1.6.0
+	github.com/joho/godotenv v1.4.0
+	github.com/zeromicro/go-zero v1.3.3
+)
 
 require (
 	github.com/beorn7/perks v1.0.1 // indirect
